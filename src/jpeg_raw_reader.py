@@ -27,6 +27,7 @@ def get_jpeg_datetime(file_path):
     exif_data = image._getexif()
 
     if exif_data is None:
+        print(f"No metadata available for \"{file_path}\": ", end="")
         return None
 
     for tag, value in exif_data.items():
@@ -42,5 +43,6 @@ def get_raw_datetime(file_path):
 
         if metadata.datetime is not None:
             return metadata.datetime
-
+        
+    print(f"No metadata available for \"{file_path}\": ", end="")   
     return None
