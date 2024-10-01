@@ -57,4 +57,4 @@ MIT License
 Contributions are welcome! Please submit a pull request or file an issue on GitHub.
 
 ## Authors
-- Your Name
+- SCHORSCH007
