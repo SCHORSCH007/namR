@@ -5,6 +5,9 @@
 The **Namer CLI Tool** is a command-line utility designed to rename files based on their content or metadata.
 
 
+## not finished -> more Filetypes are coming!!
+
+
 ## Features
 
 ### 1. File Renamer Based on Metadata (For picture Files)
