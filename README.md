@@ -14,9 +14,9 @@ The **Namer CLI Tool** is a command-line utility designed to rename files based 
 - **Description**: Renames to YYYY-MM-DD_HH-MM-SS_<Description_if_given>
 - **Supported File Types**:['.jpg', '.jpeg','.cr2', '.nef', '.arw', '.dng']
 
-### 2. AI-Powered File Naming (For Complex Files)
+### 2. AI-Powered File Naming
 - **Description**: Uses the googel gemini ai to autoname Docx-files
-- **Supported File Types**: Docx (for now)
+- **Supported File Types**: ['.docx', '.md','.txt', ''] 
 - **How it works**:
   - promts the first 100 words of the document and metadata to the AI and it returns the filename
 - **Example**: A document about climate change statistics becomes `climate_change_report_2024.docx`.

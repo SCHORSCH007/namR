@@ -33,7 +33,7 @@ def main():
 
     parser.add_argument("path", nargs="+", type=valid_path, help="Path for Namr to process files. Wildcards and directories are accepted.")
     parser.add_argument("-f", "--force", default=False, action="store_true", help="Rename files without confirmation.")
-    parser.add_argument("-r", "--recursive", default=False, action="store_true", help="Rename files in subdirectories as well.")
+    # parser.add_argument("-r", "--recursive", default=False, action="store_true", help="Rename files in subdirectories as well.")
     parser.add_argument("-d", "--description", type=str, help="Rename supported Pictures with a given description to YYYY-MM-DD_HH-MM-SS_<Description> on other file formats this will be given to the AI")
 
     args = parser.parse_args()

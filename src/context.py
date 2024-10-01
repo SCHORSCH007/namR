@@ -3,6 +3,7 @@ import os
 from api import do_request
 from docx_reader import docx_strategy
 from jpeg_raw_reader import jpeg_raw_strategy
+from txt_md_reader import txt_md_strategy
 
 
 class Context:
@@ -37,4 +38,6 @@ def eval_strategy(file_path:str):
         return (True, docx_strategy)
     if extension in ['.jpg', '.jpeg','.cr2', '.nef', '.arw', '.dng']:
         return (False, jpeg_raw_strategy)
+    if extension in ['.md', '.txt', '']:
+        return (True, txt_md_strategy)
     return (False, None)
